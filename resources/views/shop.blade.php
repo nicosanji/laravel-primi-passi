@@ -10,6 +10,7 @@
     <!-- Styles Css -->
     <style>
 
+
     </style>
 </head>
 
@@ -20,15 +21,10 @@
     </header>
 
     <main>
-        <ul>
-            @foreach ($linkList as $link)
-                <li>
-                    <a href="{{ route($link) }}">{{ $link }}</a>
-                </li>
-            @endforeach
-        </ul>
+        <a href="/">
+            <h3>{{ $homeLink }}</h3>
+        </a>
     </main>
-
 </body>
 
 </html>

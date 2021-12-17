@@ -17,24 +17,62 @@ Route::get('/', function () {
   $data = [
     'title' => 'HOMEPAGE',
     'subtitle' => 'My first laravel page',
-    'text' => 'Hello World',
-    'navlinks' => [
-      'Link 1',
-      'Link 2',
-      'Link 3',
-      'Link 4'
+    'linkList' => [
+      'documentation',
+      'download',
+      'shop',
+      'about us',
+      'contact',
     ],
-    'aboutUsLink' => 'About Us'
   ];
   return view('home', $data);
 })->name("/");
 
 
-Route::get('/about-us', function () {
+Route::get('documentation', function () {
+  $data = [
+    'title' => 'DOCUMENTATION',
+    'subtitle' => 'Documentation page',
+    'homeLink' => 'Home'
+  ];
+  return view('documentation', $data);
+})->name("documentation");
+
+
+Route::get('download', function () {
+  $data = [
+    'title' => 'DOWNLOAD',
+    'subtitle' => 'Download page',
+    'homeLink' => 'Home'
+  ];
+  return view('download', $data);
+})->name("download");
+
+
+Route::get('shop', function () {
+  $data = [
+    'title' => 'SHOP',
+    'subtitle' => 'Shop page',
+    'homeLink' => 'Home'
+  ];
+  return view('shop', $data);
+})->name("shop");
+
+
+Route::get('about-us', function () {
   $data = [
     'title' => 'ABOUT US',
-    'subtitle' => 'My second laravel page',
+    'subtitle' => 'About Us page',
     'homeLink' => 'Home'
   ];
   return view('about-us', $data);
-})->name("about-us");
+})->name("about us");
+
+Route::get('contact', function () {
+  $data = [
+    'title' => 'CONTACT',
+    'subtitle' => 'Contact page',
+    'homeLink' => 'Home'
+  ];
+  return view('contact', $data);
+})->name("contact");
