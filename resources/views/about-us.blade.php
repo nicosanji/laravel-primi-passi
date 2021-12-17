@@ -15,6 +15,10 @@
 
         a {
             text-decoration: none;
+            color: crimson;
+        }
+        img {
+          max-width: 50vh;
         }
 
     </style>
@@ -27,6 +31,8 @@
     </header>
 
     <main>
+        <img src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/681/original/Pittogramma-RGB-1080-BLUE-circle.png"
+            alt="boolean">
         <a href="/">
             <h3>{{ $homeLink }}</h3>
         </a>

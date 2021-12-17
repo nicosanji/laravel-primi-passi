@@ -21,11 +21,11 @@
         li {
             display: inline-block;
             padding: 0 1rem;
-            border: 1px solid black;
         }
 
         a {
             text-decoration: none;
+            color: crimson;
         }
 
     </style>
