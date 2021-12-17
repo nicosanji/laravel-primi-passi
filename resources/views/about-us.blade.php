@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{$title}}</title>
+    <title>{{ $title }}</title>
 
-  <!-- Styles Css -->
-  <style>
-  a {
-    text-decoration: none;
-  }
-  </style>
+    <!-- Styles Css -->
+    <style>
+        body {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+    </style>
 </head>
 
 <body>
+    <header>
+        <h1>{{ $title }}</h1>
+        <h2>{{ $subtitle }}</h2>
+    </header>
 
-  <header>
-    <h1>{{$title}}</h1>
-    <h2>{{$subtitle}}</h2>
-  </header>
-
-  <main>
-    <a href="/"><h3>{{$homeLink}}</h3></a>
-  </main>
-
+    <main>
+        <a href="/">
+            <h3>{{ $homeLink }}</h3>
+        </a>
+    </main>
 </body>
 
 </html>

@@ -34,7 +34,7 @@ Route::get('/about-us', function () {
   $data = [
     'title' => 'ABOUT US',
     'subtitle' => 'My second laravel page',
-    'homeLink' => 'Go to Home'
+    'homeLink' => 'Home'
   ];
   return view('about-us', $data);
 })->name("about-us");
