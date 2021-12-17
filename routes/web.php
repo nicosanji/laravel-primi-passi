@@ -16,13 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
   $data = [
     'title' => 'HOMEPAGE',
-    'subtitle' => 'My first laravel page',
+    'subtitle' => 'Hello Laravel',
     'linkList' => [
-      'documentation',
-      'download',
-      'shop',
-      'about us',
-      'contact',
+      'Documentation',
+      'Download',
+      'Shop',
+      'About us',
+      'Contact',
     ],
   ];
   return view('home', $data);
@@ -33,46 +33,51 @@ Route::get('documentation', function () {
   $data = [
     'title' => 'DOCUMENTATION',
     'subtitle' => 'Documentation page',
+    'text' => 'This is the documentation',
     'homeLink' => 'Home'
   ];
   return view('documentation', $data);
-})->name("documentation");
+})->name("Documentation");
 
 
 Route::get('download', function () {
   $data = [
     'title' => 'DOWNLOAD',
     'subtitle' => 'Download page',
+    'text' => 'This is the download',
     'homeLink' => 'Home'
   ];
   return view('download', $data);
-})->name("download");
+})->name("Download");
 
 
 Route::get('shop', function () {
   $data = [
     'title' => 'SHOP',
     'subtitle' => 'Shop page',
+    'text' => 'This is the shop',
     'homeLink' => 'Home'
   ];
   return view('shop', $data);
-})->name("shop");
+})->name("Shop");
 
 
 Route::get('about-us', function () {
   $data = [
     'title' => 'ABOUT US',
     'subtitle' => 'About Us page',
+    'text' => 'This is the about us',
     'homeLink' => 'Home'
   ];
   return view('about-us', $data);
-})->name("about us");
+})->name("About us");
 
 Route::get('contact', function () {
   $data = [
     'title' => 'CONTACT',
     'subtitle' => 'Contact page',
+    'text' => 'This is the contact',
     'homeLink' => 'Home'
   ];
   return view('contact', $data);
-})->name("contact");
+})->name("Contact");

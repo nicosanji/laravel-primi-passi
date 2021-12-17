@@ -8,9 +8,7 @@
     <title>{{ $title }}</title>
 
     <!-- Styles Css -->
-    <style>
-
-    </style>
+    @include("style")
 </head>
 
 <body>
@@ -20,6 +18,7 @@
     </header>
 
     <main>
+        <p>{{ $text }}</p>
         <a href="/">
             <h3>{{ $homeLink }}</h3>
         </a>

@@ -8,9 +8,7 @@
     <title>{{ $title }}</title>
 
     <!-- Styles Css -->
-    <style>
-
-    </style>
+    @include("style")
 </head>
 
 <body>
