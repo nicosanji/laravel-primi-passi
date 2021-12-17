@@ -14,5 +14,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+  $data = [
+    'title' => 'HOMEPAGE',
+    'subtitle' => 'My first laravel page',
+    'text' => 'Hello World',
+    'navlinks' => [
+      'Link 1',
+      'Link 2',
+      'Link 3',
+      'Link 4'
+    ],
+    'aboutUsLink' => 'About Us'
+  ];
+  return view('home', $data);
+})->name("/");
+
+
+Route::get('/about-us', function () {
+  $data = [
+    'title' => 'ABOUT US',
+    'subtitle' => 'My second laravel page',
+    'homeLink' => 'Go to Home'
+  ];
+  return view('about-us', $data);
+})->name("about-us");
