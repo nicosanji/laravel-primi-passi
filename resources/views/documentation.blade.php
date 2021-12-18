@@ -19,6 +19,7 @@
 
     <main>
         <p>{{ $text }}</p>
+        <img src="https://s29.postimg.cc/xqf5iv9kn/laravel_logo_white.png" alt="laravel-logo">
         <a href="/">
             <h3>{{ $homeLink }}</h3>
         </a>

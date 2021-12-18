@@ -18,6 +18,7 @@
     </header>
 
     <main>
+
         <ul>
             @foreach ($linkList as $link)
                 <li>
@@ -25,6 +26,7 @@
                 </li>
             @endforeach
         </ul>
+        <img src="https://s29.postimg.cc/xqf5iv9kn/laravel_logo_white.png" alt="laravel-logo">
     </main>
 
 </body>
